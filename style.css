@@ -80,8 +80,8 @@ h1 {
   color: #888;
 }
 
-.freeze-btn {
-  /* base styling */
+
+button {
   position: absolute;
   bottom: 6%;
   left: 50%;
@@ -98,26 +98,10 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
-
-.freeze-btn:hover {
+button:hover {
   background-color: #B47DDB;
   transform: translateX(-50%) scale(1.05);
   box-shadow: 0 0 15px #B47DDB;
-}
-
-button {
-  border-radius: 0px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
