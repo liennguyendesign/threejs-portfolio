@@ -19,5 +19,11 @@
     "url": "https://github.com/liennguyendesign/threejs-portfolio/issues"
   },
   "homepage": "https://github.com/liennguyendesign/threejs-portfolio#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.4"
+  }
 }
