@@ -17,6 +17,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
 const explodeBtn = document.createElement('button');
+explodeBtn.type = 'button';
 explodeBtn.className = 'freeze-btn';
 explodeBtn.innerText = 'view portfolio';
 explodeBtn.style.position = 'absolute';
@@ -129,7 +130,9 @@ window.addEventListener('click', async () => {
   targetPositions = newPositions;
 });
 
-explodeBtn.addEventListener('click', () => {
+explodeBtn.addEventListener('click', (event) => {
+   event.preventDefault(); // <-- prevent any default action
+  if (freezeMode) return;
   freezeMode = true;
   for (let i = 0; i < velocities.length; i += 3) {
     velocities[i] = (Math.random() - 0.5) * 30;
