@@ -86,6 +86,7 @@ h1 {
 
 button {
   position: absolute;
+  display: none;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
