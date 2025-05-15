@@ -130,10 +130,11 @@ window.addEventListener('click', async () => {
   targetPositions = newPositions;
 });
 
-explodeBtn.addEventListener('click', (event) => {
-   event.preventDefault(); // <-- prevent any default action
+explodeBtn.addEventListener('click', () => {
+console.log('Button clicked');
   if (freezeMode) return;
   freezeMode = true;
+  console.log('Button clicked');
   for (let i = 0; i < velocities.length; i += 3) {
     velocities[i] = (Math.random() - 0.5) * 30;
     velocities[i + 1] = (Math.random() - 0.5) * 30;
@@ -146,6 +147,7 @@ explodeBtn.addEventListener('click', (event) => {
   }, 500);
 
   setTimeout(() => {
+    console.log('Redirecting now...');
     window.location.href = 'https://www.liennguyendesign.com/work';
   }, 1500);
 });
