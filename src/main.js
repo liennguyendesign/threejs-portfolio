@@ -143,7 +143,7 @@ explodeBtn.addEventListener('click', () => {
   }, 500);
 
   setTimeout(() => {
- window.location.assign('/work');
+ window.location.assign('https://www.liennguyendesign.com/work');
   }, 1500);
 });
 
