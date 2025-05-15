@@ -143,7 +143,7 @@ explodeBtn.addEventListener('click', () => {
   }, 500);
 
   setTimeout(() => {
- window.location.replace('/work');
+ window.location.assign('/work');
   }, 1500);
 });
 
