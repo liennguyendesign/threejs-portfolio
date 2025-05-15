@@ -136,7 +136,17 @@ explodeBtn.addEventListener('click', () => {
     velocities[i + 1] = (Math.random() - 0.5) * 30;
     velocities[i + 2] = (Math.random() - 0.5) * 30;
   }
+
+  // Trigger fade and redirect
+  setTimeout(() => {
+    fadeOverlay.style.opacity = 1;
+  }, 500);
+
+  setTimeout(() => {
+    window.location.href = 'https://www.liennguyendesign.com/work';
+  }, 1500);
 });
+
 
 // explodeBtn.addEventListener('mouseleave', () => {
 //   freezeMode = false;
@@ -200,3 +210,16 @@ function animate(time) {
 }
 
 setupInitialParticles();
+
+
+const fadeOverlay = document.createElement('div');
+fadeOverlay.style.position = 'fixed';
+fadeOverlay.style.top = 0;
+fadeOverlay.style.left = 0;
+fadeOverlay.style.width = '100vw';
+fadeOverlay.style.height = '100vh';
+fadeOverlay.style.backgroundColor = 'black';
+fadeOverlay.style.opacity = 0;
+fadeOverlay.style.pointerEvents = 'none';
+fadeOverlay.style.transition = 'opacity 1s ease';
+document.body.appendChild(fadeOverlay);
