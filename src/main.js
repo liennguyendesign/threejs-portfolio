@@ -131,15 +131,8 @@ window.addEventListener('click', async () => {
 });
 
 explodeBtn.addEventListener('click', () => {
-console.log('Button clicked');
-  if (freezeMode) return;
-  freezeMode = true;
-  console.log('Button clicked');
-  for (let i = 0; i < velocities.length; i += 3) {
-    velocities[i] = (Math.random() - 0.5) * 30;
-    velocities[i + 1] = (Math.random() - 0.5) * 30;
-    velocities[i + 2] = (Math.random() - 0.5) * 30;
-  }
+  window.location.href = 'https://www.liennguyendesign.com/work';
+});
 
   // Trigger fade and redirect
   setTimeout(() => {
